@@ -55,9 +55,6 @@ int main()
     printf("Combinação de dois modificadores: unsigned long int m; \n");
     printf("\n\n");
 
-    printf("A função printf()\n");
-    printf(" % c para char");
-
     system("pause");
     return 0;
 }
