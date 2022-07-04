@@ -32,22 +32,13 @@ int main()
     scanf("%d", &exe4);
     printf("Valor digitado %f", exe4);
     printf("\n\n");
-
-
+*/
     printf("Ex05\n");
     float flut5;
     printf("Digite um valor de ponto flutuante: ");
     scanf("%f", &flut5);
-    printf("Valor digitado: %d", flut5); //Digitei 1.0 e imprimiu 1065353216
-    printf("Ex06\n");
-*/
-    printf("Ex06\n");
-    printf("Leia um tipo double e o imprima na forma de notação científica\n");
-    double d1;
-    printf("Digite um tipo double: \n");
-    scanf("%lf", &d1);
-    printf("O valor digitado é: %f\n", d1);
-    printf("Em notação científica fica %.9E", d1);
-    //system("pause");
+    printf("Valor digitado: %d", flut5);
+
+    system("pause");
     return 0;
 }
