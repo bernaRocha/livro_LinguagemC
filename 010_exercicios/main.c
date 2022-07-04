@@ -4,11 +4,6 @@
 int main()
 {
 /*
-    printf("Hello world!\n");
-    printf("Hello\nworld!\n");
-    printf("Hello \\ world!\n");
-    printf("\"Hello world\"\n");
-
     printf("Ex01\n");
     printf("Início do programa.\nFim");
     printf("\n\n");
@@ -54,7 +49,7 @@ int main()
     scanf("%c", &letra);
     printf("A letra digita %c tem o valor inteiro: %i", letra, letra);
 */
-    printf("Ex08 Ler três números e imprimir na ordem inversa. \n");
+    printf("Ex08 - Ler três números e imprimir na ordem inversa. \n");
     int i, numbers[3];
     printf("Digite três números inteiros: \n");
 
@@ -67,6 +62,5 @@ int main()
     for(i = 2; i >= 0; i--) {
         printf("%d ", numbers[i]);
     }
-    //system("pause");
     return 0;
 }
