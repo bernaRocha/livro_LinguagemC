@@ -48,7 +48,7 @@ int main()
     printf("Digite a letra: \n");
     scanf("%c", &letra);
     printf("A letra digita %c tem o valor inteiro: %i", letra, letra);
-*/
+
     printf("Ex08 - Ler três números e imprimir na ordem inversa. \n");
     int i, numbers[3];
     printf("Digite três números inteiros: \n");
@@ -62,5 +62,30 @@ int main()
     for(i = 2; i >= 0; i--) {
         printf("%d ", numbers[i]);
     }
+
+    printf("Ex09 - Leia três floats e imprima na ordem inversa \n");
+    int i;
+    float numbers[3];
+    printf("Digite três números do tipo float: \n");
+
+    for(int i = 0; i < 3; i++){
+        scanf("%f", &numbers[i]);
+         //fflush(stdin);
+    }
+    printf("Resultado: \n");
+    for(i = 2; i >= 0; i--) {
+        printf("%.1f ", numbers[i]);
+    }
+*/
+    printf("Ex10 Peça o dia, mês e ano e imprima os valores separados por barra. \n");
+    int dia, mes, ano;
+    printf("Digite o dia: \n");
+    scanf("%d", &dia);
+    printf("Em qual mês: \n");
+    scanf("%d", &mes);
+    printf("Em qual ano: \n");
+    scanf("%d", &ano);
+
+    printf("A data registrada é: %d/ %d/ %d ", dia, mes, ano);
     return 0;
 }
