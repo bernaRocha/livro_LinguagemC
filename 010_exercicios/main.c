@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#define numeroFloat 5.4
 int main()
 {
 /*
@@ -56,7 +56,6 @@ int main()
     for(i = 0; i < 3; i++) {
         printf("Digite o valor %d: ", i + 1);
         scanf("%d", &numbers[i]);
-            fflush(stdin);
     }
     printf("Resultado: \n");
     for(i = 2; i >= 0; i--) {
@@ -76,7 +75,7 @@ int main()
     for(i = 2; i >= 0; i--) {
         printf("%.1f ", numbers[i]);
     }
-*/
+
     printf("Ex10 Peça o dia, mês e ano e imprima os valores separados por barra. \n");
     int dia, mes, ano;
     printf("Digite o dia: \n");
@@ -87,5 +86,34 @@ int main()
     scanf("%d", &ano);
 
     printf("A data registrada é: %d/ %d/ %d ", dia, mes, ano);
+
+    printf("Ex11 Definir uma constante e imprimir \n");
+    printf("Tá na linha 3\n");
+    printf("%.1f", numeroFloat);
+
+    printf("Ex12 Faça uma constante inteira com const e imprima \n");
+    const int idade = 34;
+    printf("Idade = %d", idade);
+
+    printf("Ex13 \n");
+    char letra;
+    letra = getchar();
+    printf("Digite uma letra a ser impressa entre aspas duplas: \n");
+
+    printf("Letra digitada: \"%c\"", letra);
+*/
+    printf("Ex14 Ler três char e imprimir em uma linha usando apenas um printf \n");
+    char letra1, letra2, letra3;
+    letra1 = getchar(); letra2 = getchar(); letra3 = getchar();
+   // scanf("%c %c %c", &letra1, &letra2, &letra3);
+
+    printf("Letra 1 = %c \nletra 2 = %c \nletra 3 = %c", letra1, letra2, letra3);
+/*
+    printf("Ex14 Ler três char e imprimir em uma linha usando apenas um printf \n");
+    char letra1, letra2, letra3;
+    scanf("%c %c %c", &letra1, &letra2, &letra3);
+
+    printf("Letra 1 = %c \nletra 2 = %c \nletra 3 = %c", letra1, letra2, letra3);
+*/
     return 0;
 }
