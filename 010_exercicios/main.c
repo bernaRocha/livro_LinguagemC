@@ -101,19 +101,23 @@ int main()
     printf("Digite uma letra a ser impressa entre aspas duplas: \n");
 
     printf("Letra digitada: \"%c\"", letra);
-*/
-    printf("Ex14 Ler três char e imprimir em uma linha usando apenas um printf \n");
-    char letra1, letra2, letra3;
-    letra1 = getchar(); letra2 = getchar(); letra3 = getchar();
-   // scanf("%c %c %c", &letra1, &letra2, &letra3);
 
-    printf("Letra 1 = %c \nletra 2 = %c \nletra 3 = %c", letra1, letra2, letra3);
-/*
     printf("Ex14 Ler três char e imprimir em uma linha usando apenas um printf \n");
     char letra1, letra2, letra3;
     scanf("%c %c %c", &letra1, &letra2, &letra3);
 
     printf("Letra 1 = %c \nletra 2 = %c \nletra 3 = %c", letra1, letra2, letra3);
 */
+    printf("Ex15 Ler três valores: char int e float, imprimir de 3 formas diferentes usando apenas um printf \n");
+    char letra;
+    int numero;
+    float numeroReal;
+    printf("Registre uma letra: \n");
+    scanf("%c", &letra);
+    printf("Agora um número inteiro: \n");
+    scanf("%d", &numero);
+    printf("E agora um número real: \n");
+    scanf("%f", &numeroReal);
+    printf("Letra: %c, inteiro: %d real: %.1f\ninteiro: %d real: %.1f Letra: %c\nreal: %.1f Letra: %c inteiro: %d", letra, numero, numeroReal, numero, numeroReal, letra, numeroReal, letra, numero);
     return 0;
 }
