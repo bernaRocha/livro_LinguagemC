@@ -4,6 +4,7 @@
 int main()
 {
     printf("Hello world!\n");
+    // page 56
     int r, x = 5, y = 3;
     r = (x > 2) && (y < x);
     printf("Resultado: %d\n", r);
