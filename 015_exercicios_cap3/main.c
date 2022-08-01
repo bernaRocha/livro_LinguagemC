@@ -42,7 +42,7 @@ int main()
 
     media = (num1 + num2 + num3 + num4) / 4;
     printf("A média é %f", media);
-*/
+
     printf("Ex 05 - Calcule o ano de nascimento a partir da idade e o ano atual. \n");
 
     int idade, anoAtual, anoNascimento;
@@ -54,13 +54,19 @@ int main()
     scanf("%c", &fezAniversario);
 
     fezAniversario = getchar();
-    //putchar(fezAniversario);
+
     if(fezAniversario == 'S' || fezAniversario == 's') {
         anoNascimento = anoAtual - idade;
     } else {
         anoNascimento = anoAtual - (idade + 1);
     }
     printf("\n\nSeu ano de nascimento é %d", anoNascimento);
+*/
 
+    printf("Ex 06 - Converta uma medida de Km/h em m/s: \n");
+    float kmHora, mSegundo;
+    scanf("%f", &kmHora);
+    mSegundo = kmHora / 3.6;
+    printf("\nA velocidade de %.1f em m/s é %.2f", kmHora, mSegundo);
     return 0;
 }
