@@ -12,10 +12,10 @@ int main()
     printf("Can only bve used in char, int and long types.\n");
 
     unsigned char x, y;
-    x = 44;
+    x = 44;                 // 00101100 em binário
     printf("x = %d\n", x);
-    y = ~x;
-    printf("~x = %d\n", y);
+    y = ~x;                 // complemento ~
+    printf("~x = %d\n", y); // 11010011 em binário
 
     x = 44;
     printf("x = %d\n", x);
