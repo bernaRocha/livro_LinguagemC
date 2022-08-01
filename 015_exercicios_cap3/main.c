@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include<stdbool.h>
 
 int main()
 {
@@ -16,13 +17,14 @@ int main()
 
     printf("Número registrado é: %d\n", inteiro);
     printf("O antecessor de %d é %d e o seu sucessor é %d.", inteiro, antecessor, sucessor);
+
     printf("Ex 02 - ler um número real e imprimir a quinta parte dele.\n");
     int real, quintaParte;
     printf("Registre o número: ");
     scanf("%d", &real);
     quintaParte = real / 5;
     printf("A quinta parte de %d é %d", real,quintaParte);
-*/
+
 
     printf("Ex 03 - ler 3 inteiros e imprimir a soma. \n");
     int num1, num2, num3, soma;
@@ -32,5 +34,33 @@ int main()
     soma = num1 + num2 + num3;
 
     printf("A soma de %d, %d, %d é %d", num1, num2, num3, soma);
+
+    printf("Ex 04 - ler 4 floats e calcular a média aritmética. \n");
+    float num1, num2, num3, num4, media;
+    printf("Registre os 4 números: \n");
+    scanf("%f%f%f%f", &num1, &num2, &num3, &num4);
+
+    media = (num1 + num2 + num3 + num4) / 4;
+    printf("A média é %f", media);
+*/
+    printf("Ex 05 - Calcule o ano de nascimento a partir da idade e o ano atual. \n");
+
+    int idade, anoAtual, anoNascimento;
+    int fezAniversario;
+
+    printf("Diga sua idade e depois o ano atual: \n");
+    scanf("%d%d", &idade, &anoAtual);
+    printf("Você já fez aniversário este ano? Responda com 'S/s' ou 'N/n'\n");
+    scanf("%c", &fezAniversario);
+
+    fezAniversario = getchar();
+    //putchar(fezAniversario);
+    if(fezAniversario == 'S' || fezAniversario == 's') {
+        anoNascimento = anoAtual - idade;
+    } else {
+        anoNascimento = anoAtual - (idade + 1);
+    }
+    printf("\n\nSeu ano de nascimento é %d", anoNascimento);
+
     return 0;
 }
