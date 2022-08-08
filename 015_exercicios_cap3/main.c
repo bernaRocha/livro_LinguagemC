@@ -61,12 +61,23 @@ int main()
         anoNascimento = anoAtual - (idade + 1);
     }
     printf("\n\nSeu ano de nascimento é %d", anoNascimento);
-*/
 
     printf("Ex 06 - Converta uma medida de Km/h em m/s: \n");
     float kmHora, mSegundo;
     scanf("%f", &kmHora);
     mSegundo = kmHora / 3.6;
     printf("\nA velocidade de %.1f em m/s é %.2f", kmHora, mSegundo);
+
+*/
+    printf("Ex 07 - Faça um programa que leia um valor em reais e\n a cotação em dólar e imprimir o valor em dólares.\n");
+    float real, cotacaoDolarDia, dolarConvertido;
+    printf("Quanto em reais deseja investir em dólares? \n");
+    scanf("%f", &real);
+    printf("Qual a cotação do dólar de hoje? \n");
+    scanf("%f", &cotacaoDolarDia);
+
+    dolarConvertido = real / cotacaoDolarDia;
+
+    printf("O valor convertido em dólares dá: %.3f", dolarConvertido);
     return 0;
 }
