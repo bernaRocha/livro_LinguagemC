@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#define PI 3.141592
 
 int main()
 {
@@ -68,7 +69,6 @@ int main()
     mSegundo = kmHora / 3.6;
     printf("\nA velocidade de %.1f em m/s é %.2f", kmHora, mSegundo);
 
-*/
     printf("Ex 07 - Faça um programa que leia um valor em reais e\n a cotação em dólar e imprimir o valor em dólares.\n");
     float real, cotacaoDolarDia, dolarConvertido;
     printf("Quanto em reais deseja investir em dólares? \n");
@@ -79,5 +79,26 @@ int main()
     dolarConvertido = real / cotacaoDolarDia;
 
     printf("O valor convertido em dólares dá: %.3f", dolarConvertido);
+
+    printf("Ex 08 - Converter graus Celsius em Fahrenheit. \n");
+    float celsius, fahrenheit;
+    printf("Qual a temperatura a ser convertida? \n");
+    scanf("%f", &celsius);
+
+    fahrenheit = celsius * (9.0/5.0) + 32.0;
+
+    printf("%.0f Celsius em Fahrenheit é: %.2f ", celsius, fahrenheit);
+
+*/
+    printf("Ex 09- Leia um ângulo em graus e converta para radianos. \n");
+
+    float graus, radianos;
+    printf("Qual grau a ser convertido? \n");
+    scanf("%f", &graus);
+
+    radianos = (graus * PI) / 180;
+
+    printf("O ângulo %.0f em radianos é %.5f", graus, radianos);
+
     return 0;
 }
