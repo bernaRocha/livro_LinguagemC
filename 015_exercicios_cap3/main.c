@@ -109,7 +109,6 @@ int main()
     printf("O ganhador 2 receberá %.2f\n", ganhador2);
     printf("O ganhador 3 receberá %.2f\n", ganhador3);
 
-*/
 
     printf("Ex 11 - Ler o valor do raio de um círculo. Calcular e imprimir a área do círculo correspondente.\n");
     float raio, areaCirculo;
@@ -119,5 +118,15 @@ int main()
     areaCirculo = PI * raio * raio;
 
     printf("A área do circulo de raio %.1f é %.3f", raio, areaCirculo);
+*/
+
+    printf("Ex 12 - ler a altura e o raio de um cilindro circular e imprimir o volume desse cilindro. \n");
+    float alturaCirculo, raioCirculo, volumeCirculo;
+    scanf("%f%f", &alturaCirculo, &raioCirculo);
+
+    volumeCirculo = PI * raioCirculo * raioCirculo * alturaCirculo;
+
+    printf("O volume do círculo de raio %.2f e altura %.2f é %.2f", raioCirculo, alturaCirculo, volumeCirculo);
+
     return 0;
 }
