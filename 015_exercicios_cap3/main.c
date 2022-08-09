@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#define PI 3.141592
+#define PI 3.1415926535898
 
 int main()
 {
@@ -99,7 +99,6 @@ int main()
 
     printf("O ângulo %.0f em radianos é %.5f", graus, radianos);
 
-*/
     printf("Ex 10 - Dividir a importância de 780.000,00 entre três ganhadores\n1- 46%% do total\n2- 32%% do total\n3 - Receberá o resto.\n");
     float ganhador1, ganhador2, ganhador3, montante = 780000.00;
     ganhador1 = 0.46 * montante;
@@ -109,5 +108,16 @@ int main()
     printf("O ganhador 1 receberá %.2f\n", ganhador1);
     printf("O ganhador 2 receberá %.2f\n", ganhador2);
     printf("O ganhador 3 receberá %.2f\n", ganhador3);
+
+*/
+
+    printf("Ex 11 - Ler o valor do raio de um círculo. Calcular e imprimir a área do círculo correspondente.\n");
+    float raio, areaCirculo;
+    printf("Qual o raio do círculo a ser calculado a sua área: \n");
+    scanf("%f", &raio);
+
+    areaCirculo = PI * raio * raio;
+
+    printf("A área do circulo de raio %.1f é %.3f", raio, areaCirculo);
     return 0;
 }
