@@ -89,7 +89,6 @@ int main()
 
     printf("%.0f Celsius em Fahrenheit é: %.2f ", celsius, fahrenheit);
 
-*/
     printf("Ex 09- Leia um ângulo em graus e converta para radianos. \n");
 
     float graus, radianos;
@@ -100,5 +99,15 @@ int main()
 
     printf("O ângulo %.0f em radianos é %.5f", graus, radianos);
 
+*/
+    printf("Ex 10 - Dividir a importância de 780.000,00 entre três ganhadores\n1- 46%% do total\n2- 32%% do total\n3 - Receberá o resto.\n");
+    float ganhador1, ganhador2, ganhador3, montante = 780000.00;
+    ganhador1 = 0.46 * montante;
+    ganhador2 = 0.32 * montante;
+    ganhador3 = montante - ganhador1 - ganhador2;
+
+    printf("O ganhador 1 receberá %.2f\n", ganhador1);
+    printf("O ganhador 2 receberá %.2f\n", ganhador2);
+    printf("O ganhador 3 receberá %.2f\n", ganhador3);
     return 0;
 }
