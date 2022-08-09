@@ -118,7 +118,6 @@ int main()
     areaCirculo = PI * raio * raio;
 
     printf("A área do circulo de raio %.1f é %.3f", raio, areaCirculo);
-*/
 
     printf("Ex 12 - ler a altura e o raio de um cilindro circular e imprimir o volume desse cilindro. \n");
     float alturaCirculo, raioCirculo, volumeCirculo;
@@ -127,6 +126,16 @@ int main()
     volumeCirculo = PI * raioCirculo * raioCirculo * alturaCirculo;
 
     printf("O volume do círculo de raio %.2f e altura %.2f é %.2f", raioCirculo, alturaCirculo, volumeCirculo);
+
+*/
+    printf("Ex 13 - Ler os valores dos catetos a e b, obtenha e imprima a hipotenusa.\n");
+    float catetoA, catetoB, hipotenusa;
+    scanf("%f%f", &catetoA, &catetoB);
+
+    // Só roda via linha de comando
+    hipotenusa = sqrt((catetoA * catetoA) + (catetoB * catetoB));
+
+    printf("A hipotenusa de um triangulo com catetos de %.1f e %.1f e %.2f\n", catetoA, catetoB, hipotenusa);
 
     return 0;
 }
