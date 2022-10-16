@@ -56,3 +56,14 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+*
+!/**/
+!*.*
+
+*.depend
+*.o
+*.out
+*.vscode
+*.cbp
+*.layout
