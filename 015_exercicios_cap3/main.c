@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <string.h>
+#include <ctype.h>
 #define PI 3.1415926535898
 
 int main()
@@ -127,15 +129,24 @@ int main()
 
     printf("O volume do círculo de raio %.2f e altura %.2f é %.2f", raioCirculo, alturaCirculo, volumeCirculo);
 
-*/
     printf("Ex 13 - Ler os valores dos catetos a e b, obtenha e imprima a hipotenusa.\n");
     float catetoA, catetoB, hipotenusa;
     scanf("%f%f", &catetoA, &catetoB);
 
-    // Só roda via linha de comando
+    // Só roda via linha de comando  // gcc main.c -lm # cria o arquivo a.out
+                                     // ./a.out
     hipotenusa = sqrt((catetoA * catetoA) + (catetoB * catetoB));
 
     printf("A hipotenusa de um triangulo com catetos de %.1f e %.1f e %.2f\n", catetoA, catetoB, hipotenusa);
+*/
 
+    printf("Ex 14 - Converter maiúscula em minúscula.\n"); // usei a lib #include <string.h>
+    //strlwr não funciona em Linux
+
+    char letraMaiuscula, letraMinuscula;
+    printf("Entre com uma letra maiúscula: \n");
+    letraMaiuscula = getchar();
+    // retornar https://www.youtube.com/watch?v=PAwxGsU30D4&t=277s&ab_channel=Programeseufuturo
+    printf("A letra %c convertida para minúscula é %c", letraMaiuscula, strlwr(letraMaiuscula));
     return 0;
 }

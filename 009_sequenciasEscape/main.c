@@ -47,7 +47,6 @@ int main()
     printf("Digite um tipo double: \n");
     scanf("%lf", &d1);
     printf("O valor digitado é: %f\n", d1);
-    printf("Em notação científica fica %.1E", d1);
-    //system("pause");
+    printf("Em notação científica fica %.1E\n", d1);
     return 0;
 }
